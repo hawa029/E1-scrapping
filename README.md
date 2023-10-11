@@ -19,9 +19,25 @@ Dans ce projet, nous créons un système automatique de scrapping d'offres d'emp
 
 ## Objectifs
 
-1 - Valider les compétences du projet E1
-2 - Challenger la mise en place d'une application web
-3 - Réaliser une API
+* Valider les compétences du projet E1
+* Challenger la mise en place d'une application web
+* Réaliser une API
+
+## Excécution
+
+* Cloner le projet avec la commande indiquée par Github. 
+
+* Avant tout il faut installer les bibliothèeques nécessaires au bon fonctionnement de l'application. Dans le terminal, tapez la commande ``pip install -r requirements.txt``; Dans ce fichier sont contenus tous les modules et librairies. 
+
+* Ensuite, tapez la commande ``python app.py`` à la racine du projet. 
+
+* Un serveur Flask se lance sur le port 5000. A l'adresse : **http://localhost:5000**
+
+* Se rendre à l'adresse **http://localhost:5000/home** pour rejoindre la page d'accueil.
+
+* Profitez de l'interface graphique pour naviguer dans l'application. 
+
+* Amusez-vous bien !
 
 ## Crédits
 
