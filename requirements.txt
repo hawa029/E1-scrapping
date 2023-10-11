@@ -4,4 +4,4 @@ Pillow
 Keras
 Scrapy
 SQLAlchemy
-
+flask-login

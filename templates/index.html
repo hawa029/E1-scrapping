@@ -1,18 +1,19 @@
 {% extends 'base.html' %} {% block header %}
 
 {% endblock %} {% block content %}
-          <div class="container">
+          <div class="row">
                 <h1>Bienvenue !</h1>
-                <h2 class="center">Trouver votre future alternance</h2>
+                <h2 class="center">Trouver votre future alternance !</h2>
           </div>
-        
+          <br>
           <!--Information de conneexion-->
           <div class="container">
           {% if current_user.is_authenticated %}
-          <h3 class="center"><a href="{{ url_for('dashboard')}}"  style="color:#000000;">Consulter les offres disponibles</a></h3>
+          <!--<h3 class="center"><a href="{{ url_for('dashboard')}}"  style="color:#000000;">Consulter les offres disponibles</a></h3>-->
+          <h3 class="center"><a href="{{ url_for('dashboard')}}"><button style="color:#000000;"   type="button" >voir les offres !!</button></h3></a>
           {% endif %}
         </div>
-        <br>
+        <br><br>
 {% endblock %}
 
 

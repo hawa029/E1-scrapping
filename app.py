@@ -7,6 +7,8 @@ import flask_monitoringdashboard as dashboard
 import pandas as pd
 import secrets
 
+from indeed_scrapping import run_scrapping
+
 
 
 app = Flask(__name__)
@@ -95,15 +97,25 @@ def logout():
     # Redirige l'utilisateur vers la page d'accueil
     return redirect(url_for('home'))
 
+
+
 @app.route('/profile')
 @login_required
 def profile():
     return render_template('profile.html')
 
+
+
+# route pour la visualisation des résultats
+
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return render_template('dashboard.html')
+
+    results = run_scrapping()
+    return render_template('dashboard.html',infos = results)
+
+# route pour le formulaire de contact
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():

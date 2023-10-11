@@ -7,11 +7,19 @@
           <h4 class="header col s12 light">Analyse des dernières offres sur Dijon</h4>
         </div>
     </div>
+        <!--Insertion des résultats du script de scrapping-->
+
+
+        <div class="container">
+            {{ infos.to_html(index=False) | safe }}
+        </div>
+
 
       <!--Bouton d'appel pour accéder au formulaire d'estimation de coût-->
       <div class="container">
         <div class="row center">
-          <a href="{{ url_for('home')}}">retour à la recherche</a>
+          <h3><a href="{{ url_for('home')}}"><button type="button" >retour</button></h3></a>
+          <h3><button style="color:#000000;" onclick="window.print()" type="button" >imprimer</button></h3>
         </div>
         <br><br>
       </div>

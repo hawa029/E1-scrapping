@@ -47,11 +47,12 @@
 				  </a>
 				  <ul class="right" style="margin-top: 20px; font-size: 20px;">
 					<li><a href="{{ url_for('home')}}"  style="color:#000000;" >Accueil</a></li>
-					<li><a href="{{ url_for('register')}}"  style="color:#000000;" >Inscription</a></li>
+					
 					{% if current_user.is_authenticated %}
-					<li><a href="{{ url_for('login')}}"  style="color:#000000;"  >Déconnexion</a></li>
+					<li><a href="{{ url_for('logout')}}"  style="color:#000000;"  >Déconnexion</a></li>
 					{% else %}
 					<li><a href="{{ url_for('login')}}"  style="color:#000000;"  >Connexion</a></li>
+					<li><a href="{{ url_for('register')}}"  style="color:#000000;" >Inscription</a></li>
 					{% endif %}
 				  </ul>
 				  <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
