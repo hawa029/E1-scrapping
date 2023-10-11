@@ -1,0 +1,7 @@
+Flask
+Tensorflow
+Pillow
+Keras
+Scrapy
+SQLAlchemy
+

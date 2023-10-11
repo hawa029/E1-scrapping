@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+          <div class="container">
+                <h1>Bienvenue !</h1>
+                <h2 class="center">Trouver votre future alternance</h2>
+          </div>
+        
+          <!--Information de conneexion-->
+          <div class="container">
+          {% if current_user.is_authenticated %}
+          <h3 class="center"><a href="{{ url_for('dashboard')}}"  style="color:#000000;">Consulter les offres disponibles</a></h3>
+          {% endif %}
+        </div>
+        <br>
+{% endblock %}
+
+
+

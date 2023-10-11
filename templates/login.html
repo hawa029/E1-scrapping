@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+
+<div class="container pt-60">
+
+    <div class="container">
+        <form action="{{ url_for('login')}}" method="POST">
+          
+            <div class="row">
+              <div class="input-field col s12">
+                 <input name="email" type="email" class="validate">
+                 <label for="email">E-mail</label>
+            </div>
+           
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="password">Mot de passe</label>
+              <input name="password" type="password"  class="validate" required>
+           </div>
+          </div>
+              <div class="row center">
+              <h3><button style="color:#000000;" type="submit" >se connecter</button></h3>
+          </div>
+        </form>
+    </div>
+    <br><br>
+  </div>
+
+{% endblock %} 

@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block header %}
+
+{% endblock %} {% block content %}
+      <!--Main layout-->
+    <div class="container">
+        <div class="row center">
+          <h4 class="header col s12 light">Analyse des dernières offres sur Dijon</h4>
+        </div>
+    </div>
+
+      <!--Bouton d'appel pour accéder au formulaire d'estimation de coût-->
+      <div class="container">
+        <div class="row center">
+          <a href="{{ url_for('home')}}">retour à la recherche</a>
+        </div>
+        <br><br>
+      </div>
+{% endblock %}
