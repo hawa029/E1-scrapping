@@ -24,7 +24,7 @@ class User(db.Model, UserMixin):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
     
-    
+"""
 class Contact(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), nullable=False)
@@ -35,3 +35,4 @@ class ContactForm(FlaskForm):
     name = StringField('Nom', validators=[DataRequired()])
     email = StringField('E-mail', validators=[DataRequired(), Email()])
     message = TextAreaField('Message', validators=[DataRequired()])
+"""

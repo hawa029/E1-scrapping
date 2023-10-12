@@ -8,17 +8,13 @@
                   </div>
                   <div class="row">
                         <p>L’alternance comprend deux types de contrats : le <a href="http://travail-emploi.gouv.fr/formation-professionnelle/formation-en-alternance/article/le-contrat-d-apprentissage">contrat d’apprentissage</a> et le <a href="http://travail-emploi.gouv.fr/formation-professionnelle/formation-en-alternance/article/le-contrat-de-professionnalisation">contrat de professionnalisation.</a> Véritable passerelle vers l'emploi et la qualification, cette voie de formation repose sur des périodes alternées d'enseignement théorique et de formation pratique en entreprise.</p>
-
-                        <p>L'apprenti ou le salarié en contrat de professionnalisation est en contact immédiat avec le monde professionnel. Les connaissances qu'il acquiert par la spécialité de formation choisie lui permettent notamment d'appréhender les facettes du métier auquel il se destine.</p>
-
-                        <p>Pour l'entreprise, l'alternance s'impose comme un mode d'accès privilégié à des compétences nouvelles et à des profils adaptés à ses besoins spécifiques.</p>
                   </div>
             </div>
             <br>
             <!--Information de connexion-->
             <div class="container">
             {% if current_user.is_authenticated %}
-            <h3 class="center"><a href="{{ url_for('dashboard')}}"><button style="color:#000000;"   type="button" >voir les offres !!</button></h3></a>
+            <p class="center"><a href="{{ url_for('dashboard')}}"><button style="color:#000000;"   type="button" >voir les offres !!</button></></a>
             {% endif %}
             </div>
             <br><br>

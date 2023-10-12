@@ -1,10 +1,9 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
 from flask_login import LoginManager, login_user, logout_user, current_user, login_required
-from models import User, db, Contact, ContactForm
+from models import User, db
 from werkzeug.security import generate_password_hash
 from werkzeug.security import check_password_hash
 import flask_monitoringdashboard as dashboard
-import pandas as pd
 import secrets
 
 from indeed_scrapping import run_scrapping
@@ -114,23 +113,6 @@ def dashboard():
 
     results = run_scrapping()
     return render_template('dashboard.html',infos = results)
-
-# route pour le formulaire de contact
-
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    form = ContactForm()
-    if form.validate_on_submit():
-        name = form.name.data
-        email = form.email.data
-        message = form.message.data
-        # Créer un nouveau contact avec les données du formulaire
-        new_contact = Contact(name=name, email=email, message=message)
-        # Ajouter le nouveau contact à la base de données
-        db.session.add(new_contact)
-        db.session.commit()
-        return "Message envoyé"
-    return render_template('contact.html', form=form)
 
 
 
