@@ -16,7 +16,7 @@ class User(db.Model, UserMixin):
     is_active = db.Column(db.Boolean(), default=True)
 
     def __repr__(self):
-        return '<User {}>'.format(self.username)
+        return '{}'.format(self.username)
 
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
