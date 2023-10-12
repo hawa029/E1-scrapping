@@ -45,7 +45,7 @@ def register():
             flash('Email déjà utilisé', 'danger')
             return redirect(url_for('register'))
 
-        hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
+        hashed_password = generate_password_hash(password, method='pbkdf2:sha256') # nouvelle annottation de 'sha256'
         # Créer un nouvel utilisateur avec les données du formulaire
         new_user = User(username=username, email=email, password_hash=hashed_password)
         # Ajouter le nouvel utilisateur à la base de données
