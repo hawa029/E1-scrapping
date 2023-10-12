@@ -80,7 +80,7 @@ def login():
 
         # Vérifie si le mot de passe est correct
         if not  user or not check_password_hash(user.password_hash, password):
-            flash("<div class='row center'><h1>Email ou mot de passe incorrect</h1></div>")
+            flash("Email ou mot de passe incorrect")
             return redirect(url_for('login'))
         else:
             # Connecte l'utilisateur

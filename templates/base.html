@@ -49,7 +49,8 @@
 					<li><a href="{{ url_for('home')}}"  style="color:#000000;" >Accueil</a></li>
 					
 					{% if current_user.is_authenticated %}
-					<li><a href="{{ url_for('logout')}}"  style="color:#000000;"  >Déconnexion</a></li>
+					<li><a href="{{ url_for('logout')}}"  style="color:#000000;">Déconnexion</a></li>
+					<li><a href="{{ url_for('profile')}}"  style="color:#0c5789;">Bonjour, {{ current_user }}</a></li>
 					{% else %}
 					<li><a href="{{ url_for('login')}}"  style="color:#000000;"  >Connexion</a></li>
 					<li><a href="{{ url_for('register')}}"  style="color:#000000;" >Inscription</a></li>
