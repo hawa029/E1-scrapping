@@ -4,7 +4,7 @@
 
 L'idée de se projet est venu du fait qu'il est difficile pour bon nombre d'étudiant de trouver une alternance. Les entreprises sont de plus en plus exigeantes et les offres difficiles à trouver. Ce projet est un clin-d'oeil et un soutien à toutes celles et ceux qui peinent à trouver leur chemin. 
 
-### Enrol-Me
+### Enroll-Me
 
 le nom de l'application est parlant **Enroll-Me** : embauche-moi, enrolle moi. Une invitation à l'audace d'embaucher un jeune, un adulte en reconversion etc... 
 
