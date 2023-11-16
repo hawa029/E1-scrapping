@@ -43,4 +43,4 @@ Dans ce projet, nous créons un système automatique de scrapping d'offres d'emp
 
 Jean-Paul SOSSAH
 
-[Me contacter](https://www.linkedin.com/in/jean-paul-s-9a232419b/)
+[Me contacter](https://www.linkedin.com/in/jean-paul-sossah/)
