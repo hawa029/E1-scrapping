@@ -5,3 +5,4 @@ Keras
 Scrapy
 SQLAlchemy
 flask-login
+gunicorn

@@ -63,6 +63,12 @@ def load_user(user_id):
 def home():
     return render_template('index.html')
 
+# route qui s'affioche lors du lancement de l'application
+@app.route('/')
+def local():
+    # Redirige l'utilisateur vers la page d'accueil
+    return redirect(url_for('home'))
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     # Vérifie si l'utilisateur est déjà connecté
